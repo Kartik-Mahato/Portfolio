@@ -77,6 +77,16 @@ export const HeroP = styled.p`
     text-align: center;
     max-width: 600px;
 
+    &:hover {
+        transition: all 0.1s ease-out;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 40px #fff,
+                     0 0 80px #fff,
+                     0 0 120px #fff;
+    }
+
     @media screen and (max-width: 760px) {
         font-size: 50px;
     }
