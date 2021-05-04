@@ -5,14 +5,12 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 
 // projects
-import pizzaProject from '../../assets/img/projects/pizza.png';
+import instagramClone from '../../assets/img/projects/insta-clone.gif';
 
 // skills
-import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
-import L_EXPRESS from "../../assets/img/skills/express.svg";
-import L_MONGODB from "../../assets/img/skills/mongodb.svg";
-import L_HTML5 from "../../assets/img/skills/html-5.svg";
-import L_CSS3 from "../../assets/img/skills/css3.svg";
+import L_REACT from '../../assets/img/skills/react.svg';
+import L_FIREBASE from '../../assets/img/skills/firebase.svg';
+import L_GITHUB from '../../assets/img/skills/github.svg';
 
 import './Timeline.css';
 
@@ -23,11 +21,11 @@ const ProjectTimeline = () => {
             <Timeline>
                 <Events>
                     <ImageEvent
-                        date="01/10/2020"
+                        date="05/04/2021"
                         className="text-center"
-                        text="Get Your Pizza"
-                        src={pizzaProject}
-                        alt="Realtime Pizza Application"
+                        text="Instagram Clone"
+                        src={instagramClone}
+                        alt="Instagram Clone"
                     >
                         <div className="d-flex justify-content-between flex-column mt-1">
                             <div>
@@ -43,13 +41,13 @@ const ProjectTimeline = () => {
 
                                         <Accordion.Collapse eventKey="0" className="text-left">
                                             <Card.Body>
-                                                <strong>Description:</strong> This is a Realtime Pizza delivery web application.
+                                                <strong>Description:</strong> This is a Instagram Clone app.
                                                 <hr />
                                                 <strong>Features:</strong>
                                                 <ul className="list-styles pt-1">
                                                     <li>User can register/login</li>
-                                                    <li>User can order food and keep track of their order status</li>
-                                                    <li>Respoisive Design</li>
+                                                    <li>User can check the photos of their followers</li>
+                                                    <li>User can add comment</li>
                                                 </ul>
                                                 <hr />
                                                 <strong>Tech used:</strong>
@@ -57,56 +55,34 @@ const ProjectTimeline = () => {
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
-                                                                src={L_HTML5}
-                                                                alt="HTML 5"
+                                                                src={L_REACT}
+                                                                alt="React.js"
                                                                 rounded
                                                                 className="image-style m-1"
                                                             ></Image>{" "}
-                                                            HTML5
+                                                            REACT.JS
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
-                                                                src={L_CSS3}
+                                                                src={L_FIREBASE}
                                                                 alt="CSS 3"
                                                                 rounded
                                                                 className="image-style m-1"
                                                             ></Image>{" "}
-                                                            CSS3
+                                                            FIREBASE
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
-                                                                src={L_NODE_JS}
-                                                                alt="React"
-                                                                rounded
-                                                                className="image-style1 m-1"
-                                                            ></Image>{" "}
-                                                            NODE JS
-                                                        </span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_EXPRESS}
+                                                                src={L_GITHUB}
                                                                 alt="Material-UI"
                                                                 rounded
                                                                 className="image-style1 m-1"
                                                             ></Image>{" "}
-                                                            EXPRESS JS
-                                                        </span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={L_MONGODB}
-                                                                alt="Material-UI"
-                                                                rounded
-                                                                className="image-style1 m-1"
-                                                            ></Image>{" "}
-                                                            MONGO DB
+                                                            GITHUB
                                                         </span>
                                                     </li>
 
@@ -124,7 +100,7 @@ const ProjectTimeline = () => {
                                     SEE LIVE
                                 </UrlButton> */}
                                 <UrlButton
-                                    href="https://github.com/Kartik-Mahato/pizza"
+                                    href="https://github.com/Kartik-Mahato/instagram-clone"
                                     target="_blank"
                                 >
                                     SOURCE CODE
