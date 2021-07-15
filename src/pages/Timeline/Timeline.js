@@ -8,7 +8,6 @@ import Card from 'react-bootstrap/Card';
 import instagramClone from '../../assets/img/projects/insta-clone.gif';
 import githubUsers from '../../assets/img/projects/githubuser.png';
 import ecommerce from '../../assets/img/projects/ecommerce.png';
-import yourcars from '../../assets/img/projects/yourcars.png';
 
 // skills
 import L_REACT from '../../assets/img/skills/react.svg';
