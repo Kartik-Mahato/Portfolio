@@ -7,12 +7,15 @@ import Card from 'react-bootstrap/Card';
 // projects
 import instagramClone from '../../assets/img/projects/insta-clone.gif';
 import githubUsers from '../../assets/img/projects/githubuser.png';
+import ecommerce from '../../assets/img/projects/ecommerce.png';
+import yourcars from '../../assets/img/projects/yourcars.png';
 
 // skills
 import L_REACT from '../../assets/img/skills/react.svg';
 import L_FIREBASE from '../../assets/img/skills/firebase.svg';
 import L_GITHUB from '../../assets/img/skills/github.svg';
 import L_AUTH0 from '../../assets/img/skills/auth0.svg';
+import L_REDUX from '../../assets/img/skills/redux.svg';
 
 import './Timeline.css';
 
@@ -100,12 +103,6 @@ const ProjectTimeline = () => {
                                 >
                                     SEE LIVE
                                 </UrlButton>
-                                {/* <UrlButton
-                                    href="https://github.com/Kartik-Mahato/instagram-clone"
-                                    target="_blank"
-                                >
-                                    SOURCE CODE
-                                </UrlButton> */}
                             </div>
                         </div>
                     </ImageEvent>
@@ -197,7 +194,84 @@ const ProjectTimeline = () => {
                             </div>
                         </div>
                     </ImageEvent>
-                
+                    <ImageEvent
+                        date="08/06/2021"
+                        className="text-center"
+                        text="Ecommerce (Flipkart-Clone)"
+                        src={ecommerce}
+                        alt="Ecommerce"
+                    >
+                        <div className="d-flex justify-content-between flex-column mt-1">
+                            <div>
+                                <Accordion>
+                                    <Card>
+                                        <Accordion.Toggle
+                                            as={Card.Header}
+                                            eventKey="0"
+                                            className="p-2 text-center accordian-main"
+                                        >
+                                            PROJECT DETAILS
+                                        </Accordion.Toggle>
+
+                                        <Accordion.Collapse eventKey="0" className="text-left">
+                                            <Card.Body>
+                                                <strong>Description:</strong> This project is an ecommerce web application based on the design of official Flipkart Application. It is simply a portfolio project.
+                                                <hr />
+                                                <strong>Features:</strong>
+                                                <ul className="list-styles pt-1">
+                                                    <li>User can Register/Login.</li>
+                                                    <li>User can pick any order and add the product to cart</li>
+                                                    <li>User can add multiple address and select any one from them for delivery</li>
+                                                    <li>User can check the order status on order details page</li>
+                                                </ul>
+                                                <hr />
+                                                <strong>Tech used:</strong>
+                                                <ul>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_REACT}
+                                                                alt="React.js"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                            REACT.JS
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_REDUX}
+                                                                alt="Redux"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                            REDUX
+                                                        </span>
+                                                    </li>
+
+                                                </ul>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                </Accordion>
+                            </div>
+                            <div className="d-flex justify-content-between flex-nowrap text-center">
+                                <UrlButton
+                                    href="https://e-commerce-frontend-1.herokuapp.com/"
+                                    target="_blank"
+                                >
+                                    SEE LIVE
+                                </UrlButton>
+                                <UrlButton
+                                    href="https://github.com/Kartik-Mahato/instagram-clone"
+                                    target="_blank"
+                                >
+                                    SOURCE CODE
+                                </UrlButton>
+                            </div>
+                        </div>
+                    </ImageEvent>
                 </Events>
             </Timeline>
         </div>
